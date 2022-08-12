@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartListActivity"
+    android:background="@android:color/white">
+
+  <TextView
+      android:id="@+id/judul"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="15dp"
+      android:text="Daftar Keranjang"
+      android:textStyle="bold"
+      android:textColor="@android:color/black"
+      android:textSize="26sp"
+      />
+  <TextView
+      android:id="@+id/subJudul"
+      android:layout_below="@id/judul"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="Siap Delivery "
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:layout_marginBottom="10dp"
+      />
+  <ListView
+      android:id="@+id/listView"
+      android:layout_below="@id/subJudul"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </ListView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/listCart"
+      android:padding="16dp"
+      android:background="@android:color/transparent"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="120dp">
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+          <TextView
+              android:text="Total Biaya Pemesanan: Rp"
+              android:textSize="14sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:id="@+id/total"
+              android:text="35,000"
+              android:textSize="14sp"
+              android:layout_marginLeft="15dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPesan"
+            android:text="P e s a n S e k a r a n g"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundedshape"
+            />
+      </LinearLayout>
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

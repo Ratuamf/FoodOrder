@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ngeunah</string>
+    <string name="konfirmasi">- Pilih Makanan \n- Kirim permintaan Max jam 10 AM \n- Makanan diantar jam 11.30 AM \n- Bayar Cash \n -Tidak ada pembatalan pesanan </string>
+    <string name="rekening">Rekening ABC a/n Ratu Ananda MF</string>
+    <string name="no_rek">7887493723</string>
+
+
+</resources>

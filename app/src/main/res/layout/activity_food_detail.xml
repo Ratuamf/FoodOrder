@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/food_image"
+                android:layout_width="180sp"
+                android:layout_height="200sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginEnd="8sp"
+                android:scaleType="centerInside"
+                android:src="@drawable/b2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/food_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    tools:text="CAH KANGKUNG" />
+
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Proses Pemesanan"
+                    android:textSize="12sp"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/phone_roundshape" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Rp. "/>
+
+                    <TextView
+                        android:id="@+id/price_detail_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="10000" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="3dp"
+                    android:text="Masukkan Jumlah Porsi"
+                    android:textSize="10sp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:layout_gravity="left">
+
+                    <Button
+                        android:id="@+id/increment_button"
+                        android:layout_width="33sp"
+                        android:layout_height="30sp"
+                        android:layout_toRightOf="@+id/sum_text_view"
+                        android:backgroundTint="@android:color/holo_red_light"
+                        android:paddingTop="3sp"
+                        android:text="+"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/sum_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2sp"
+                        android:layout_toRightOf="@+id/decrement_button"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/decrement_button"
+                        android:layout_width="35dp"
+                        android:layout_height="41dp"
+                        android:backgroundTint="@android:color/holo_red_light"
+                        android:paddingTop="1dp"
+                        android:text="-"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_margin="0dp"
+                        android:text="Porsi"
+                        android:layout_toRightOf="@id/increment_button"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/phone_roundshape" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="total"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Rp."
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/price_total_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="22dp"
+                        android:text="0"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedshape"
+            android:text="Masukkan Keranjang"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cart_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/phone_roundshape"
+            android:text="Lihat Keranjang"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>

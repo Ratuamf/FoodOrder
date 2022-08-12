@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA ORDER"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/edt_nama_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Nama Pemesan"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/edt_tlp_pemesan"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:hint="Nomor Telpon"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/edt_alamat_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_place"
+        android:drawablePadding="10dp"
+        android:hint="Alamat Pengiriman"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/note_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_note_foreground"
+        android:drawablePadding="10dp"
+        android:hint="Note Pesanan Anda"
+        android:textSize="15sp"
+        />
+
+
+    <Button
+        android:id="@+id/finisOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="K I R I M  P E S A N A N"
+        android:background="@drawable/phone_roundshape"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        />
+</LinearLayout>

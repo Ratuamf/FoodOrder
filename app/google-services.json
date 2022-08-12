@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "712281812034",
+    "firebase_url": "https://testngeunah.firebaseio.com",
+    "project_id": "testngeunah",
+    "storage_bucket": "testngeunah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712281812034:android:21abf299bdb156ecb251db",
+        "android_client_info": {
+          "package_name": "com.example.ngeunah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712281812034-2l7jlca4m2okutqsr8hc92opcaaoi63l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ngeunah",
+            "certificate_hash": "0335b0babf202b7f09778929537225be67217611"
+          }
+        },
+        {
+          "client_id": "712281812034-o5rjataaiu74ihc0i1a0c1atho8r9gvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdmb67cH2EKRrVuhi0eD8T3DFi4nixeVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712281812034-o5rjataaiu74ihc0i1a0c1atho8r9gvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
